@@ -1,0 +1,371 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Translator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Translator.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 599, 287
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "READ AND SEND BIN&EXCEL TO BIN V1.0"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,18,13,21,21
+    LTEXT           "READ AND SEND BIN&EXCEL TO BIN V1.0",IDC_STATIC,50,10,
+                    123,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,50,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,542,7,50,14,WS_GROUP
+    LTEXT           "使用说明",IDC_STATIC,261,54,35,9
+    LTEXT           "翻译文件操作:",IDC_STATIC,22,71,56,9
+    LTEXT           "下载数据:",IDC_STATIC,22,176,41,9
+    LTEXT           "1、点击：“选择EXCEL文件” ,选择好后点击“翻译配置数据”或“翻译地理数据” ",
+                    IDC_STATIC,40,87,447,8
+    LTEXT           "1、选择本地计算的串口号",IDC_STATIC,45,190,146,8
+    LTEXT           "2、如果是配置数据则翻译完成，如果是地理数据则按第一步翻译翻译上下行地理数据",
+                    IDC_STATIC,40,102,447,8
+    LTEXT           "3、点击“选取帧头”，选择帧头数据表，点击“选取上行地理数据”选择上行数据，点击“选取下行地理数据” 选择下行地理数据。",
+                    IDC_STATIC,40,117,488,8
+    LTEXT           "4、点击“合成地理数据”，等待数据合成完毕后，地理数据翻译完成。",
+                    IDC_STATIC,40,132,447,8
+    LTEXT           "注：翻译配置数据时，请将配置数据表中的最后计算校验和行删除，系统将自动进行计算。如不删除系统将此行作为数据进行翻译处理！",
+                    IDC_STATIC,40,152,522,8
+    LTEXT           "2、如下载配置数据则点击“选择配置数据二进制文件”，选择要下载的配置数据文件。如要下载地理数据则点击“选择地理数据二进制文件”，选择要下载的地理数据文件。",
+                    IDC_STATIC,45,205,481,17
+    LTEXT           "3、点击“发送”按钮，将看到发送帧内容有数据后，将目标板上电。",
+                    IDC_STATIC,45,229,488,8
+    LTEXT           "4、如连接成功，下位机反馈信息处将显示“准备”，数据开始下载。",
+                    IDC_STATIC,45,244,488,8
+    LTEXT           "5、数据下载成功后，下位机反馈信息处将显示“校验成功”，数据下载完毕。",
+                    IDC_STATIC,45,259,488,8
+END
+
+IDD_COMMTEST_DIALOG DIALOGEX 0, 0, 574, 441
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "READ AND SEND BIN&EXCEL TO BIN V1.0"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "串口关闭",IDC_BUTTON_PORTSTATU,10,13,50,15,WS_DISABLED,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO_SERIOU,30,31,35,67,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BAUD,30,47,35,145,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JIAOYAN,30,63,35,57,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DATA,30,79,35,50,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STOP,30,95,35,46,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "串口",IDC_STATIC,7,33,19,12
+    LTEXT           "波特率",IDC_STATIC,4,49,25,8
+    GROUPBOX        "参数设置",IDC_STATIC_GROUP,1,2,71,112,BS_CENTER
+    LTEXT           "校验位",IDC_STATIC,4,65,25,8
+    LTEXT           "数据位",IDC_STATIC,4,81,25,8
+    LTEXT           "停止位",IDC_STATIC,4,97,25,8
+    CONTROL         "十六进制发送",IDC_CHECK_HEXSEND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,495,9,68,14
+    CONTROL         "自动发送",IDC_CHECK_AUTOSEND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,495,29,68,14
+    PUSHBUTTON      "选择配置数据二进制文件(*.con)",IDC_BUTTON_TRANSFILE,126,
+                    11,135,22,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "清空发送",IDC_BUTTON_EMPTYTEXT,495,86,66,22,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "发送",IDC_BUTTEN_MENUALSEND,126,51,49,52,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "filepath",IDC_STATIC_FILEPAHT,127,36,355,9
+    EDITTEXT        IDC_EDIT_TXDATA,193,150,374,40,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL | NOT 
+                    WS_TABSTOP
+    CONTROL         "以十六进制显示",IDC_CHECK_HEXDISPLAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,495,49,68,11
+    PUSHBUTTON      "清空转换数据",IDC_BUTTON_EMPTYRX,6,310,91,21,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         "写入文件(默认路径)",IDC_CHECK_WRITETOFILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,365,89,11
+    PUSHBUTTON      "更改文件",IDC_BUTTON_FILENAME,57,187,37,14,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "存文本框内容",IDC_BUTTON_SAVEEDIT,1,187,50,14,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_EXCELDATA,125,281,448,71,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "所有计数清零",IDC_BUTTON_RESET,1,159,72,27,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "退出",IDC_BUTTON_CLOSE,1,119,71,36,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "accept filename",IDC_STATIC_FILENAME,267,124,65,8
+    LTEXT           "STATUS:",IDC_STATIC_PORTSTATU,1,205,189,14,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "TX:",IDC_STATIC_TXLEN,279,205,65,14,0,WS_EX_CLIENTEDGE
+    LTEXT           "RX:",IDC_STATIC_RXLEN,201,205,65,14,0,WS_EX_CLIENTEDGE
+    LTEXT           "校验失败:",IDC_STATIC_CRCFAILD,355,205,65,14,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "计数器:",IDC_STATIC_COUNTER,432,205,65,14,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "丢帧数:",IDC_STATIC_LOSTFRAME,508,205,65,14,0,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "EXCEL文件读取转换为二进制",IDC_STATIC_GROUP2,1,222,572,
+                    216,BS_CENTER
+    GROUPBOX        "二进制文件读取发送",IDC_STATIC_GROUP3,112,2,461,193,
+                    BS_CENTER
+    LTEXT           "发送帧内容显示：",IDC_STATIC,120,151,65,10
+    LTEXT           "EXCEL部分内容显示：",IDC_STATIC,123,270,89,10
+    PUSHBUTTON      "选择EXCEL文件(*.xls)",IDC_BUTTON_EXCELSELECT,6,232,91,
+                    21,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "翻译配置数据(*.con)",IDC_BUTTON_EXCELTOBIN,6,258,91,21,
+                    0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "EXCEL文件路径:",IDC_STATIC,123,241,59,8
+    LTEXT           "filepath",IDC_STATIC_EXCELFILEPAHT,185,239,343,10
+    EDITTEXT        IDC_EDIT_BINDATAADDRESS,193,108,61,15,ES_LOWERCASE | 
+                    ES_WANTRETURN
+    LTEXT           "剩余转换数量：",IDC_STATIC,123,260,58,8
+    LTEXT           "counter",IDC_STATIC_COUNTERFORLEFT,183,260,64,8
+    LTEXT           "转换后文件路径:",IDC_STATIC,123,250,51,8
+    LTEXT           "binfilepath",IDC_STATIC_BINFILEPAHT,177,249,343,8
+    PUSHBUTTON      "翻译地理数据(*.geo)",IDC_BUTTON_EXCELTOBINLOCATION,6,
+                    284,91,21,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "选择地理数据二进制文件(*.geo)",
+                    IDC_BUTTON_TRANSFILELOCATION,352,11,134,22,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "指定起始地址：",IDC_STATIC,127,110,61,10
+    LTEXT           "0x00000000-0xffffffff",IDC_STATIC,256,110,87,10
+    CONTROL         "单包发送",IDC_CHECK_SINGLEFRAMESEND,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,495,69,68,11
+    COMBOBOX        IDC_COMBO_SENDDISTINATION,398,107,73,87,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "发送到：",IDC_STATIC,358,110,35,10
+    LTEXT           "最大等待时间：",IDC_STATIC,128,134,61,10
+    EDITTEXT        IDC_EDIT_MAXTIMETOWAIT,193,132,61,15,ES_LOWERCASE | 
+                    ES_WANTRETURN
+    LTEXT           "ms",IDC_STATIC,259,135,13,10
+    EDITTEXT        IDC_EDIT_MAXTIMESTORESEND,399,132,36,15,ES_LOWERCASE | 
+                    ES_WANTRETURN
+    LTEXT           "最大重发次数：",IDC_STATIC,334,134,57,10
+    LTEXT           "次",IDC_STATIC,446,137,13,10
+    LTEXT           "剩余发送字节：",IDC_STATIC,318,54,68,8
+    LTEXT           "0",IDC_STATIC_COUNTERFORLEFTTOSEND,397,52,57,10
+    LTEXT           "当前第：",IDC_STATIC,256,260,32,8
+    LTEXT           "行",IDC_STATIC,447,260,21,8
+    LTEXT           "张表",IDC_STATIC,335,260,16,8
+    LTEXT           "counter",IDC_STATIC_COUNTERFORSHEETS,295,260,33,8
+    LTEXT           "counter",IDC_STATIC_COUNTERFORROWS,409,260,33,8
+    LTEXT           "第：",IDC_STATIC,387,260,16,8
+    LTEXT           "第：",IDC_STATIC,488,260,16,8
+    LTEXT           "counter",IDC_STATIC_COUNTERFORCOLS,509,260,33,8
+    LTEXT           "列",IDC_STATIC,549,260,17,8
+    PUSHBUTTON      "选取帧头(*.xls)",IDC_BUTTON_SELECTFRAMEHEAD,126,359,109,
+                    21,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "选取上行地理数据(*.geo)",IDC_BUTTON_SELECTUPGEO,237,359,
+                    109,21,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "选取下行地理数据(*.geo)",IDC_BUTTON_SELECTDOWNGEO,348,
+                    359,109,21,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "合成 地理数据",IDC_BUTTON_SYNTHESIZEGEO,459,359,109,21,
+                    0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "帧头文件路径:",IDC_STATIC,65,389,59,8
+    LTEXT           "上行地理数据文件路径:",IDC_STATIC,34,399,90,8
+    LTEXT           "下行地理数据文件路径:",IDC_STATIC,33,409,91,8
+    LTEXT           "合成后地理数据文件保存路径:",IDC_STATIC,9,419,115,8
+    LTEXT           "filepath",IDC_STATIC_FRAMEHEADEXCELFILEPAHT,135,388,343,
+                    10
+    LTEXT           "filepath",IDC_STATIC_UPGEOEXCELFILEPAHT,135,398,343,10
+    LTEXT           "filepath",IDC_STATIC_DOWNGEOEXCELFILEPAHT,135,408,343,
+                    10
+    LTEXT           "filepath",IDC_STATIC_SYNTHESIZEGEOEXCELFILEPAHT,135,418,
+                    343,10
+    LTEXT           "数据包总数：",IDC_STATIC,179,65,57,10
+    LTEXT           "剩余数据包数：",IDC_STATIC,318,67,57,10
+    LTEXT           "0",IDC_STATIC_COUNTERFORDATAALL,248,65,62,10
+    LTEXT           "0",IDC_STATIC_COUNTERFORLEFTDATA,397,65,57,10
+    LTEXT           "当前发送第：",IDC_STATIC,179,80,50,10
+    LTEXT           "包中第：",IDC_STATIC,317,80,33,10
+    LTEXT           "0",IDC_STATIC_COUNTERFORCURRENTSEND,248,79,35,10
+    LTEXT           "0",IDC_STATIC_COUNTERFORFRAMEINDATA,398,80,37,10
+    LTEXT           "发送总字节：",IDC_STATIC,179,52,49,10
+    LTEXT           "0",IDC_STATIC_COUNTERFORALLBYTESEND,248,52,62,10
+    LTEXT           "包",IDC_STATIC,295,80,12,10
+    LTEXT           "帧",IDC_STATIC,440,80,12,10
+    LTEXT           "下位机反馈信息：",IDC_STATIC,496,113,70,10
+    LTEXT           "info",IDC_STATIC_REBACKINFOMATION,497,125,57,22
+    LTEXT           "剩余时间：",IDC_STATIC,179,94,50,10
+    LTEXT           "逝去时间：",IDC_STATIC,318,93,50,10
+    LTEXT           "TIME",IDC_STATIC_LEFTTIME,238,94,65,10
+    LTEXT           "TIME",IDC_STATIC_COUNTERTIME,387,93,58,10
+    PUSHBUTTON      "清空",IDC_CLEARBUTTON,536,233,37,23
+    LTEXT           "地理数据校验和:",IDC_STATIC,9,338,62,7
+    EDITTEXT        IDC_GEOADDALLCHECK,10,349,86,12,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "Translator Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Translator\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003\0"
+            VALUE "OriginalFilename", "Translator.EXE\0"
+            VALUE "ProductName", "Translator 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 592
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_COMMTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 573
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 438
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Translator(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Translator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
